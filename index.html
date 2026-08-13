@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shradhansh Tiwari - Full Stack Developer, Problem Solver, UI Enthusiast based in Kanpur, UP. Specializing in modern web applications, C++, Python, Node.js, and Machine Learning.">
+  <meta name="keywords" content="Shradhansh Tiwari, Portfolio, Full Stack Developer, Python, Node.js, CNN, Kanpur, Software Engineer">
+  <meta name="author" content="Shradhansh Tiwari">
+  <title>Shradhansh Tiwari | Full Stack Developer & UI Specialist</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+
+  <!-- Google Fonts: Inter & Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor-dot"></div>
+  <div class="custom-cursor-outline"></div>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="preloader-logo">
+      SHRADHANSH<span>.</span>
+    </div>
+    <div class="preloader-progress-bar">
+      <div class="preloader-progress-fill"></div>
+    </div>
+    <div class="preloader-counter">0%</div>
+  </div>
+
+  <!-- Ambient Glow Blobs -->
+  <div class="glow-blob glow-blob-red" style="top: -100px; left: -100px; width: 500px; height: 500px;"></div>
+  <div class="glow-blob glow-blob-red" style="top: 30%; right: -150px; width: 600px; height: 600px;"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="#home" class="logo">
+        &lt;Shradhansh <span class="logo-dot">/&gt;</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="hamburger">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <canvas id="hero-canvas" class="hero-canvas"></canvas>
+    
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-pulse"></span> Available for Opportunities
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="text-gradient">Shradhansh Tiwari</span>
+        </h1>
+
+        <div class="hero-subtitle">
+          <span class="typed-text"></span>
+        </div>
+
+        <p class="hero-description">
+          Building high-performance full-stack web applications, intuitive user interfaces, and solving complex algorithmic challenges with cutting-edge technologies.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="https://drive.google.com/file/d/10MKv1asHELg4z78HezYehI3yZVr-Y615/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fa-solid fa-paper-plane"></i> Contact Me
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-avatar-wrapper">
+          <img src="assets/images/mypic.png" alt="Shradhansh Tiwari Avatar" class="hero-avatar-img">
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator">
+      <div class="mouse-icon">
+        <div class="mouse-wheel"></div>
+      </div>
+      <span>SCROLL DOWN</span>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">DISCOVER MY STORY</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-description">
+          A passionate Full Stack Engineer dedicated to transforming complex ideas into seamless digital experiences.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-img-box">
+          <img src="assets/images/mypic.png" alt="Shradhansh Tiwari Profile" class="about-img">
+        </div>
+
+        <div class="about-text-content">
+          <h3 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 16px;">
+            Engineered for Precision & <span class="text-red">Innovation</span>
+          </h3>
+
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">
+            I am a Full Stack Developer and Computer Science undergraduate based in Kanpur, Uttar Pradesh. I possess a deep passion for designing scalable backend systems, clean frontend interfaces, and machine learning models.
+          </p>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 24px;">
+            Whether architecting full-stack SaaS tools like <strong>ShowcaseX</strong> or developing deep learning CNN recognition pipelines, I thrive at the intersection of performance, clean architecture, and modern UX design.
+          </p>
+
+          <div class="about-info-cards">
+            <div class="info-card glass-card">
+              <span class="info-card-label"><i class="fa-solid fa-user text-red"></i> Name</span>
+              <span class="info-card-value">Shradhansh Tiwari</span>
+            </div>
+
+            <div class="info-card glass-card">
+              <span class="info-card-label"><i class="fa-solid fa-location-dot text-red"></i> Location</span>
+              <span class="info-card-value">Kanpur, UP</span>
+            </div>
+
+            <div class="info-card glass-card">
+              <span class="info-card-label"><i class="fa-solid fa-envelope text-red"></i> Email</span>
+              <span class="info-card-value">Shradhansh0212@gmail.com</span>
+            </div>
+
+            <div class="info-card glass-card">
+              <span class="info-card-label"><i class="fa-solid fa-graduation-cap text-red"></i> Education</span>
+              <span class="info-card-value">B.Tech in CSE</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px;">
+            <a href="https://drive.google.com/file/d/10MKv1asHELg4z78HezYehI3yZVr-Y615/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <i class="fa-solid fa-download"></i> Download CV
+            </a>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number" data-count="100" data-plus="true">0</div>
+              <div class="stat-label">DSA Problems Solved</div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-number" data-count="8" data-plus="true">0</div>
+              <div class="stat-label">Tech Stack Mastered</div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-number" data-count="2" data-plus="true">0</div>
+              <div class="stat-label">Deployed Apps</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section-padding" style="background: rgba(255, 255, 255, 0.015);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">MY TECHNICAL TOOLKIT</span>
+        <h2 class="section-title">Skills & Expertise</h2>
+        <p class="section-description">
+          A focused breakdown of core technologies, languages, and development tools.
+        </p>
+      </div>
+
+      <div class="skills-filter">
+        <button class="skill-tab active" data-filter="all">All Skills</button>
+        <button class="skill-tab" data-filter="frontend">Frontend</button>
+        <button class="skill-tab" data-filter="backend">Backend</button>
+        <button class="skill-tab" data-filter="database">Database</button>
+        <button class="skill-tab" data-filter="languages">Languages</button>
+        <button class="skill-tab" data-filter="tools">Tools</button>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Frontend -->
+        <div class="skill-card glass-card" data-category="frontend">
+          <div class="skill-header">
+            <div class="skill-icon-title">
+              <div class="skill-icon-wrapper"><i class="fa-brands fa-html5"></i></div>
+              <div>
+                <div class="skill-name">HTML5</div>
+                <div class="skill-category-badge">Frontend</div>
+              </div>
+            </div>
+            <div class="skill-percent">95%</div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" data-percent="95%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card" data-category="frontend">
+          <div class="skill-header">
+            <div class="skill-icon-title">
+              <div class="skill-icon-wrapper"><i class="fa-brands fa-css3-alt"></i></div>
+              <div>
+                <div class="skill-name">CSS3</div>
+                <div class="skill-category-badge">Frontend</div>
+              </div>
+            </div>
+            <div class="skill-percent">90%</div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" data-percent="90%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card" data-category="frontend">
+          <div class="skill-header">
+            <div class="skill-icon-title">
+              <div class="skill-icon-wrapper"><i class="fa-brands fa-js"></i></div>
+              <div>
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-category-badge">Frontend</div>
+              </div>
+            </div>
+            <div class="skill-percent">92%</div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" data-percent="92%"></div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-card glass-card" data-category="backend">
+          <div class="skill-header">
+            <div class="skill-icon-title">
+              <div class="skill-icon-wrapper"><i class="fa-brands fa-node-js"></i></div>
+              <div>
+                <div class="skill-name">Node.js</div>
+                <div class="skill-category-badge">Backend</div>
+              </div>
+            </div>
+            <div class="skill-percent">85%</div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" data-percent="85%"></div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-card glass-card" data-category="database">
+          <div class="skill-header">
+            <div class="skill-icon-title">
+              <div class="skill-icon-wrapper"><i class="fa-solid fa-table"></i></div>
+              <div>
+                <div class="skill-name">MySQL</div>
+                <div class="skill-category-badge">Database</div>
+              </div>
+            </div>
+            <div class="skill-percent">82%</div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" data-percent="82%"></div>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="skill-card glass-card" data-category="languages">
+          <div class="skill-header">
+            <div class="skill-icon-title">
+              <div class="skill-icon-wrapper"><i class="fa-solid fa-code"></i></div>
+              <div>
+                <div class="skill-name">C++</div>
+                <div class="skill-category-badge">Languages</div>
+              </div>
+            </div>
+            <div class="skill-percent">85%</div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" data-percent="85%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card" data-category="languages">
+          <div class="skill-header">
+            <div class="skill-icon-title">
+              <div class="skill-icon-wrapper"><i class="fa-brands fa-python"></i></div>
+              <div>
+                <div class="skill-name">Python</div>
+                <div class="skill-category-badge">Languages</div>
+              </div>
+            </div>
+            <div class="skill-percent">88%</div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" data-percent="88%"></div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card glass-card" data-category="tools">
+          <div class="skill-header">
+            <div class="skill-icon-title">
+              <div class="skill-icon-wrapper"><i class="fa-brands fa-git-alt"></i></div>
+              <div>
+                <div class="skill-name">Git & GitHub</div>
+                <div class="skill-category-badge">Tools</div>
+              </div>
+            </div>
+            <div class="skill-percent">90%</div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" data-percent="90%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card" data-category="tools">
+          <div class="skill-header">
+            <div class="skill-icon-title">
+              <div class="skill-icon-wrapper"><i class="fa-solid fa-laptop-code"></i></div>
+              <div>
+                <div class="skill-name">VS Code</div>
+                <div class="skill-category-badge">Tools</div>
+              </div>
+            </div>
+            <div class="skill-percent">95%</div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" data-percent="95%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">FEATURED CREATIONS</span>
+        <h2 class="section-title">Highlighted Projects</h2>
+        <p class="section-description">
+          A showcase of full-stack platforms and machine learning applications engineered with modern technologies.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Digit Recognition Using CNN -->
+        <div class="project-card glass-card">
+          <div class="project-img-wrapper">
+            <img src="assets/images/digit_recognition.jpg" alt="Digit Recognition Using CNN" class="project-img">
+            <div class="project-overlay"></div>
+          </div>
+
+          <div class="project-content">
+            <h3 class="project-title">Digit Recognition Using CNN</h3>
+            <p class="project-description">
+              Developed a CNN-based handwritten digit recognition system using the MNIST dataset. Implemented the complete machine learning pipeline, including data preprocessing, CNN model training, evaluation, model saving/loading, and custom image prediction. Also built a Tkinter-based interactive interface that allows users to draw digits and get real-time predictions from the trained model.
+            </p>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">TensorFlow/Keras</span>
+              <span class="tech-tag">CNN</span>
+              <span class="tech-tag">MNIST</span>
+              <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">Tkinter</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/shradhanshtiwari/Digit-Recognition-Using-CNN.git" target="_blank" rel="noopener noreferrer" class="btn btn-secondary project-btn">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <button class="btn btn-primary project-btn open-modal-btn" data-modal="modal-digit-recognition">
+                <i class="fa-solid fa-eye"></i> Live Preview
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: ShowcaseX -->
+        <div class="project-card glass-card">
+          <div class="project-img-wrapper">
+            <img src="assets/images/showcasex.jpg" alt="ShowcaseX Portfolio Builder" class="project-img">
+            <div class="project-overlay"></div>
+          </div>
+
+          <div class="project-content">
+            <h3 class="project-title">ShowcaseX 🚀 – Full-Stack Portfolio Builder</h3>
+            <p class="project-description">
+              Developed a full-stack portfolio builder that enables users to create and customize professional developer portfolios through a live visual editor without writing code. Implemented JWT-based authentication, portfolio management, live preview, multiple templates, theme customization, public profile sharing, and deploy-ready ZIP export. Integrated MongoDB Atlas for cloud data persistence and deployed the application using Railway with GitHub CI/CD.
+            </p>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">JWT</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/shradhanshtiwari/ShowcaseX.git" target="_blank" rel="noopener noreferrer" class="btn btn-secondary project-btn">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="https://github.com/shradhanshtiwari/ShowcaseX.git" target="_blank" rel="noopener noreferrer" class="btn btn-primary project-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Link
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modals -->
+  <!-- Modal 1: Digit Recognition -->
+  <div id="modal-digit-recognition" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close-btn">&times;</button>
+      <img src="assets/images/digit_recognition.jpg" alt="Digit Recognition" style="width: 100%; border-radius: var(--radius-md); margin-bottom: 20px;">
+      <h3 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 12px;">Digit Recognition Using CNN</h3>
+      <p style="color: var(--text-muted); margin-bottom: 16px;">
+        This deep learning system features an interactive Tkinter GUI canvas where users can draw any digit (0-9) with their mouse. The underlying Convolutional Neural Network (CNN) processes the pixel matrix in real time, normalizes the grayscale values, feeds it through MaxPool2D and Dense layers, and outputs the confidence score with >98.7% accuracy.
+      </p>
+      <div class="project-tech-stack" style="margin-bottom: 20px;">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">TensorFlow/Keras</span>
+        <span class="tech-tag">CNN</span>
+        <span class="tech-tag">OpenCV</span>
+        <span class="tech-tag">Tkinter</span>
+      </div>
+      <div style="display: flex; gap: 12px;">
+        <a href="https://github.com/shradhanshtiwari/Digit-Recognition-Using-CNN.git" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> View Repository</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: ShowcaseX -->
+  <div id="modal-showcasex" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close-btn">&times;</button>
+      <img src="assets/images/showcasex.jpg" alt="ShowcaseX" style="width: 100%; border-radius: var(--radius-md); margin-bottom: 20px;">
+      <h3 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 12px;">ShowcaseX 🚀 – Portfolio Builder Platform</h3>
+      <p style="color: var(--text-muted); margin-bottom: 16px;">
+        ShowcaseX is a production-ready SaaS application allowing developers and designers to build bespoke portfolio websites instantly. Key capabilities include drag-and-drop section customization, custom theme palettes, instant ZIP code export, and cloud synchronization via MongoDB Atlas and Railway CI/CD.
+      </p>
+      <div class="project-tech-stack" style="margin-bottom: 20px;">
+        <span class="tech-tag">Node.js</span>
+        <span class="tech-tag">Express.js</span>
+        <span class="tech-tag">MongoDB</span>
+        <span class="tech-tag">React</span>
+        <span class="tech-tag">JWT</span>
+        <span class="tech-tag">Railway</span>
+      </div>
+      <div style="display: flex; gap: 12px;">
+        <a href="https://github.com/shradhanshtiwari/ShowcaseX.git" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> View Repository</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section-padding" style="background: rgba(255, 255, 255, 0.015);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">HONORS & RECOGNITION</span>
+        <h2 class="section-title">Achievements</h2>
+        <p class="section-description">
+          Key milestones achieved across coding platforms and software projects.
+        </p>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card glass-card">
+          <div class="achievement-icon"><i class="fa-solid fa-trophy"></i></div>
+          <div class="achievement-counter" data-count="100" data-plus="true">0</div>
+          <div class="achievement-title">DSA Problems Solved</div>
+          <div class="achievement-desc">Active problem solver on coding platforms</div>
+        </div>
+
+        <div class="achievement-card glass-card">
+          <div class="achievement-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="achievement-counter" data-count="2" data-plus="true">0</div>
+          <div class="achievement-title">Deployed Apps</div>
+          <div class="achievement-desc">Full-stack web & ML applications deployed</div>
+        </div>
+
+        <div class="achievement-card glass-card">
+          <div class="achievement-icon"><i class="fa-solid fa-award"></i></div>
+          <div class="achievement-counter" data-count="5" data-plus="true">0</div>
+          <div class="achievement-title">Certifications & Projects</div>
+          <div class="achievement-desc">Full Stack Web Dev & AI/ML Projects</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">GET IN TOUCH</span>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-description">
+          Have a project in mind, a freelance proposal, or just want to say hi? Send me a message!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-wrapper">
+          <div class="contact-info-item glass-card">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="contact-detail-title">Phone</div>
+              <a href="tel:9140122656" class="contact-detail-text">9140122656</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item glass-card">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="contact-detail-title">Email</div>
+              <a href="mailto:Shradhansh0212@gmail.com" class="contact-detail-text">Shradhansh0212@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item glass-card">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="contact-detail-title">Location</div>
+              <div class="contact-detail-text">Kanpur, Uttar Pradesh, India</div>
+            </div>
+          </div>
+
+          <div style="margin-top: 10px;">
+            <div class="contact-detail-title" style="margin-bottom: 12px;">Connect On Social Media</div>
+            <div class="social-links">
+              <a href="https://github.com/shradhanshtiwari" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/shradhansh-tiwari-642709302/" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://codolio.com/profile/shradhanshtiwari" target="_blank" rel="noopener noreferrer" class="social-btn" title="Codolio">
+                <i class="fa-solid fa-code"></i>
+              </a>
+              <a href="https://www.instagram.com/shradhansh_tiwari?igsh=anc0amoxdHd3Y3Vy" target="_blank" rel="noopener noreferrer" class="social-btn" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card glass-card">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="form-name" class="form-label">Your Name</label>
+              <input type="text" id="form-name" class="form-input" placeholder="e.g. Alex Morgan" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-email" class="form-label">Your Email</label>
+              <input type="email" id="form-email" class="form-input" placeholder="e.g. alex@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-subject" class="form-label">Subject</label>
+              <input type="text" id="form-subject" class="form-input" placeholder="Project Inquiry / Job Opportunity" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Message</label>
+              <textarea id="form-message" class="form-input" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#home" class="logo">
+        &lt;Shradhansh <span class="logo-dot">/&gt;</span>
+      </a>
+
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/shradhanshtiwari" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/shradhansh-tiwari-642709302/" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://codolio.com/profile/shradhanshtiwari" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fa-solid fa-code"></i></a>
+        <a href="https://www.instagram.com/shradhansh_tiwari?igsh=anc0amoxdHd3Y3Vy" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+      <div class="footer-copyright">
+        &copy; 2026 Shradhansh Tiwari. All rights reserved. Built with passion & precision.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top Floating Button -->
+  <button id="back-to-top" title="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- GSAP & ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <!-- Custom JS Engine -->
+  <script src="js/main.js"></script>
+</body>
+</html>

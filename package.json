@@ -1,0 +1,25 @@
+{
+  "name": "shradhansh-tiwari-portfolio",
+  "version": "1.0.0",
+  "description": "High-performance personal portfolio website for Shradhansh Tiwari built with HTML5, CSS3, Vanilla JS, and GSAP.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 8080 .",
+    "dev": "npx serve -l 8080 .",
+    "serve": "python3 -m http.server 8080"
+  },
+  "keywords": [
+    "portfolio",
+    "fullstack",
+    "developer",
+    "gsap",
+    "html5",
+    "css3",
+    "javascript"
+  ],
+  "author": "Shradhansh Tiwari <Shradhansh0212@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
